@@ -160,7 +160,7 @@ const handleGoogleSignIn = () => {
             isFormValid = isPasswordValid && passwordHasOneDigit
             window.localStorage.setItem('password', e.target.value)
             if(isFormValid===false && e.target.value !=null){
-                alert("Password Must Contain atleast 1 digit")
+                alert("Password Must have atleast 1 digit")
             }
          
             
@@ -170,7 +170,7 @@ const handleGoogleSignIn = () => {
                isFormValid=true;
            }
            else{
-               alert("Password Do Not Match");
+               alert("Password Does n't Match");
                e.target.value="";
            }
                  
@@ -298,13 +298,13 @@ backgroundImage:'linear-gradient(30deg,green,blue)'
                 <input style={inputStyle} id="password" onBlur={handleChange} name="password" className="form-control" type="password" placeholder=" Password" required></input>
                 <input style={{
 
-width:"60%",
+width:"70%",
 textAlign:"center",
 display:"flex",
 justifyContent:"center",
 margin:'auto',
-padding:'10px',
-fontWeight:'700',
+padding:'15px',
+fontWeight:'600',
 color:'white',
 backgroundImage:'linear-gradient(30deg,red,purple)'
 
@@ -321,8 +321,8 @@ backgroundImage:'linear-gradient(30deg,red,purple)'
             <p style={{ color: 'red' }}>{user.error}</p>
             {user.success && <p style={{ color: 'green' }}>User {newUser ? 'Created' : "Logged in"} Successfully</p>}
 
-            <button style={buttonStyle} onClick={handleGoogleSignIn}><img className="img-responsive" style={{width:"7%",marginRight:"10px"}} src="https://i.ibb.co/BsGRpCy/google.png" alt="fb"></img>Sign in with Google</button><br></br>
-            <button style={buttonStyle} onClick={handleFbSignIn}><img className="img-responsive" style={{width:"7%",marginRight:"10px"}} src="https://i.ibb.co/VLY14d0/fb.png" alt="fb"></img>Sign in with Facebook</button>
+            <button style={buttonStyle} onClick={handleGoogleSignIn}><img className="img-responsive" style={{width:"10%",marginRight:"15px"}} src="https://i.ibb.co/BsGRpCy/google.png" alt="fb"></img>Sign in with Google</button><br></br>
+            <button style={buttonStyle} onClick={handleFbSignIn}><img className="img-responsive" style={{width:"10%",marginRight:"15px"}} src="https://i.ibb.co/VLY14d0/fb.png" alt="fb"></img>Sign in with Facebook</button>
         </div>
 
               </div>
