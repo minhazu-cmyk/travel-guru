@@ -54,7 +54,7 @@ const Hotel = () => {
     </div>
 
     <div class="col-4">
-   rgsththbt
+   <p> <img src="https://publicidademarketing.com/wp-content/themes/yootheme/cache/google-maps-08c2bf59.jpeg" alt=""/></p>
    
     </div>
 

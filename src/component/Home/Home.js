@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import data from "../FakeData/FakeData"
-import HomeDetails from './HomeDetails';
+import React from 'react';
+
+
 import "./Home.css";
 import { Card, CardDeck } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
-   const [item, setItem] = useState(data)
 
-   const imgUrl = "https://i.ibb.co/5vNMKpf/Rectangle-1.png"
+const Home = () => {
+ 
+ const imgUrl = "https://i.ibb.co/5vNMKpf/Rectangle-1.png"
    const styles = {
      
            backgroundImage: 'url(' + imgUrl + ')',
@@ -16,6 +16,7 @@ const Home = () => {
        }
 
     return (
+     
     <div className="main" style={styles}>
    <CardDeck >
    <Card className="card">
@@ -25,7 +26,7 @@ const Home = () => {
      <Card.Title>COX'S BAZAR</Card.Title>
      </Card.Body>
      <Card.Footer>
-     <Link to="/coxsbazar"><button>BOOK HERE</button></Link>
+     <Link to="/coxsbazar"><button style={{backgroundColor:"yellow",borderRadius:"15px", padding:"2px"}}>BOOK HERE</button></Link>
      </Card.Footer>
 </Card>
 {/* 1st card */}
@@ -36,7 +37,7 @@ const Home = () => {
       
      </Card.Body>
      <Card.Footer>
-     <Link to="/sundarban"><button>BOOK HERE</button></Link>
+     <Link to="/sundarban"><button style={{backgroundColor:"yellow",borderRadius:"15px", padding:"2px"}}>BOOK HERE</button></Link>
      </Card.Footer>
    </Card>
 
@@ -47,7 +48,7 @@ const Home = () => {
        
      </Card.Body>
      <Card.Footer>
-     <Link to="/sreemangal"><button>BOOK HERE</button></Link>
+     <Link to="/sreemangal"><button style={{backgroundColor:"yellow",borderRadius:"15px", padding:"2px"}}>BOOK HERE</button></Link>
      </Card.Footer>
    </Card>
  </CardDeck>

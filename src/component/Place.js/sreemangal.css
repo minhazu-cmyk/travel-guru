@@ -1,0 +1,22 @@
+.main{
+    border: 1px solid blue;
+
+  min-height: 98%;
+  max-width: 99%;
+  max-height: 98%;
+
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
+}
+.description{
+  color: white;
+  border: 1px solid yellow;
+  border-radius: 15px;
+  padding: 15px;
+}
