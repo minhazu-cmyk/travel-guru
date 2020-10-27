@@ -14,7 +14,9 @@ A tour booking projects, a client can book the tour in different location and th
 date picker
 
 ## Front-end Thechnology :
-React.js
-Bootstrap4
-CSS3
+React.js,
+Bootstrap4,
+CSS3,
+react-bootstrap,
+material-ui
 
